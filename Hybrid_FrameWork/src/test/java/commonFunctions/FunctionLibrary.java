@@ -35,7 +35,7 @@ public class FunctionLibrary
 	
 	// 5,6,7,8 this are common methods for each sheet or module
 	
-	//method for launch browser
+	// 1) method for launch browser
 	
 	public static WebDriver startBrowser() throws Throwable
 	{
@@ -63,7 +63,7 @@ public class FunctionLibrary
 		return driver;
 	}
 	
-	//method for openUrl
+	// 2) method for openUrl
 	
 	public static void openUrl()
 	{
@@ -71,7 +71,7 @@ public class FunctionLibrary
 		
 	}
 	
-	//method for waitForElement
+	// 3) method for waitForElement (for in future we don't know which locator will be used so for that we write this code )
 	
 	public static void waitForElement(String Locator_Type,String Locator_Value,String Test_Data)
 	{
@@ -92,7 +92,7 @@ public class FunctionLibrary
 				
 	}
 	
-	// method for typeAction used to perform action in text boxes
+	// 4) method for typeAction used to perform action in text boxes
 	
 	public static void typeAction(String Locator_Type, String Locator_Value, String Test_Data)
 	{
@@ -113,7 +113,7 @@ public class FunctionLibrary
 		}
 	}
 	
-	//method for click action to perform action on buttons,images,links,radioButtons and checkBoxes
+	// 5) method for click action to perform action on buttons,images,links,radioButtons and checkBoxes
 	
 	public static void clickAction(String Locator_Type,String Locator_Value )
 	{
@@ -131,7 +131,7 @@ public class FunctionLibrary
 		}
 	}
 	
-	// method for validateTitle
+	// 6) method for validateTitle
 	
 	public static void validateTitle(String Expected_Title)
 	{
@@ -151,7 +151,7 @@ public class FunctionLibrary
 	
 	// 1) dropDownAction  2)captureStockNum   3)stockTable
 	
-	// method for dropDownAction ( this method for List box ) 
+	// 1) method for dropDownAction ( this method for List box ) 
 	
 	public static void dropDownAction(String Locator_Type,String Locator_Value,String Test_Data)
 	{
@@ -175,7 +175,7 @@ public class FunctionLibrary
 		}
 	}
 	
-	//method for capturingStockNumber into note pad
+	// 2) method for capturingStockNumber into note pad
 	
 	public static void captureStockNum(String Locator_Type,String Locator_Value) throws Throwable
 	{
@@ -201,7 +201,7 @@ public class FunctionLibrary
 		bw.close();
 	}
 	
-	// Method for stockTable 
+	// 3) Method for stockTable 
 	
 	public static void stockTable() throws Throwable
 	{
@@ -237,7 +237,7 @@ public class FunctionLibrary
 	
 	// There are 2 methods  ===> 1) captureSup 2)supplierTable
 	
-	// Method for Capture Supplier Number
+	// 1) Method for Capture Supplier Number
 	
 	public static void captureSup(String Locator_Type,String Locator_Value) throws Throwable
 	{
@@ -264,7 +264,7 @@ public class FunctionLibrary
 			
 	}
 	
-	//method for supplier table
+	// 2) method for supplier table
 	
 	public static void supplierTable() throws Throwable
 	{
@@ -300,7 +300,7 @@ public class FunctionLibrary
 	
 	// There are 2 methods ==> 1)captureCus  2)customerTable
 	
-	// method for capturing customer number
+	// 1) method for capturing customer number
 	
 	public static void captureCus(String Locator_Type,String Locator_Value) throws Throwable
 	{
@@ -327,7 +327,7 @@ public class FunctionLibrary
 		
 	}
 	
-	// Method for Customers Table 
+	// 2) Method for Customers Table 
 	
 	public static void customerTable() throws Throwable
 	{
@@ -358,7 +358,7 @@ public class FunctionLibrary
 	}
 
 	//===========================================================================
-	//method for close browser
+	// 7) method for close browser
 	
 	public static void closeBrowser()
 	{

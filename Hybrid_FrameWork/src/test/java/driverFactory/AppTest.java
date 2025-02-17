@@ -8,7 +8,8 @@ public class AppTest
 	
 	public void kickStart() throws Throwable
 	{
-		DriverScript ds = new DriverScript();
+		// DriverScript is a class and startTest is method in DriverScript
+		DriverScript ds = new DriverScript(); 
 		ds.startTest();
 	}
 
